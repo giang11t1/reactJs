@@ -1,8 +1,8 @@
 var config = {
-   entry: '/main.js',
+   entry: './main.js',
 	
    output: {
-      path:'/',
+      path:'/Desktop/reactApp/reactJs/',
       filename: 'index.js',
    },
 	
@@ -16,7 +16,7 @@ var config = {
          {
             test: /\.jsx?$/,
             exclude: /node_modules/,
-            loader: 'babel',
+            loader: 'babel-loader',
 				
             query: {
                presets: ['es2015', 'react']
